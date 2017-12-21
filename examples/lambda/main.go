@@ -5,6 +5,10 @@ import (
 	"github.com/skillkit/go-alexa"
 )
 
+func main() {
+
+}
+
 func Handle(request *alexa.Request, ctx *runtime.Context) (interface{}, error) {
 	app := alexa.NewApp(&alexa.Options{
 		ApplicationID: "amzn1.ask.skill.aaa",

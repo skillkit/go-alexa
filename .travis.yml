@@ -10,4 +10,4 @@ matrix:
     - go: tip
 
 script:
-  - go test -race $(go list ./... | grep -v /vendor/ | grep -v /examples/)
+  - go test -race $(go list ./... | grep -v /vendor/)

@@ -1,12 +1,15 @@
 package main
 
 import (
-	"encoding/json"
-
+	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/skillkit/go-alexa"
 )
 
 func main() {
+	lambda.Start(Handler)
+}
+
+func Handler(request *alexa.Request) (*alexa.Response, error) {
 	app := alexa.NewApp(&alexa.Options{
 		ApplicationID: "amzn1.ask.skill.aaa",
 	})
@@ -16,13 +19,5 @@ func main() {
 		return nil
 	})
 
-	apex.HandleFunc(func(event json.RawMessage, ctx *apex.Context) (interface{}, error) {
-		var request *alexa.Request
-
-		if err := json.Unmarshal(event, &request); err != nil {
-			return nil, err
-		}
-
-		return app.Process(request)
-	})
+	return app.Process(request)
 }

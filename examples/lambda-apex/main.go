@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 
+	"github.com/apex/go-apex"
 	"github.com/skillkit/go-alexa"
 )
 

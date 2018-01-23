@@ -43,7 +43,8 @@ type Request struct {
 		Attributes struct {
 		} `json:"attributes"`
 		User struct {
-			UserID string `json:"userId"`
+			AccessToken string `json:"accessToken"`
+			UserID      string `json:"userId"`
 		} `json:"user"`
 		Application struct {
 			ApplicationID string `json:"applicationId"`

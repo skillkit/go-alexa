@@ -147,7 +147,7 @@ func (r *Response) StandardCard(title, content, smallImageURL, largeImageURL str
 	r.Response.Card = &Card{
 		Type:    "Standard",
 		Title:   title,
-		Content: content,
+		Text: content,
 		Image: &Image{
 			LargeImageURL: largeImageURL,
 			SmallImageURL: smallImageURL,

@@ -1,7 +1,5 @@
 # alexa [![Build Status](https://travis-ci.org/skillkit/go-alexa.svg?branch=master)](https://travis-ci.org/skillkit/go-alexa) [![GoDoc](https://godoc.org/github.com/skillkit/go-alexa?status.svg)](https://godoc.org/github.com/skillkit/go-alexa) [![Go Report Card](https://goreportcard.com/badge/github.com/skillkit/go-alexa)](https://goreportcard.com/report/github.com/skillkit/go-alexa)
 
-> Work in progress
-
 Go package for creating Amazon Alexa skills. Not a hundred percent package for all Alexa features. The most basic features exists.
 
 ## Installation

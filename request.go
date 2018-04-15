@@ -72,6 +72,26 @@ type Slot struct {
 	Value string `json:"value"`
 }
 
+// ApplicationID returns the application id.
+func (r *Request) ApplicationID() string {
+	return r.Context.System.Application.ApplicationID
+}
+
+// APIAccessToken returns the access token for Alexa API.
+func (r *Request) APIAccessToken() string {
+	return r.Context.System.APIAccessToken
+}
+
+// APIEndpoint returns Alexa API endpoint.
+func (r *Request) APIEndpoint() string {
+	return r.Context.System.APIEndpoint
+}
+
+// DeviceID returns the device id.
+func (r *Request) DeviceID() string {
+	return r.Context.System.Device.DeviceID
+}
+
 // IntentName returns the intent name.
 func (r *Request) IntentName() string {
 	return r.Request.Intent.Name

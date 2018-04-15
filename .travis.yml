@@ -11,3 +11,4 @@ matrix:
 
 script:
   - go test -race $(go list ./... | grep -v /vendor/)
+  - go vet ./...

@@ -118,7 +118,7 @@ func (a *Alexa) Handler() http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		var req *Request
 
-		w.Header().Set("Content-Type", "application/json")
+		w.Header().Set("Content-Type", "application/json; charset=utf-8")
 
 		// Bail if POST method.
 		if strings.ToUpper(r.Method) != "POST" {
